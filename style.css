@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    padding: 20px 0px 0px 20px;
+    background-color: #fafafa;
+}
+#card{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    height: 850px;
+    background-color: #fafafa;
+    padding:0px 100px;
+}
+#header{
+    flex-basis: 30%;
+    text-align: center;
+    padding: 0 300px;
+    padding-top: 75px;
+}
+#header p:first-child{
+    color: #4c4e61;
+    font-size: 2rem;
+    font-weight: 200;
+}
+#header p:nth-child(2){
+    color: #4c4e61 ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#header p:last-child{
+    color: #a3a5ae;
+    margin-top: 15px;
+}
+/*--------------*/
+#footer{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.line{
+    flex:1;
+    margin: 0 10px;
+}
+#top_mid_box{
+    margin-bottom: 30px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:20px 30px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 2px 25px #a3a5ae ;
+}
+#footer .line:first-child .box{
+    border-top:5px solid cyan ;
+}
+#top_mid_box{
+    border-top:5px solid red ;
+}
+#bottom_mid_box{
+    border-top:5px solid orange ;
+}
+#footer .line:last-child .box{
+    border-top:5px solid blue ;
+}
+.header_box{
+    flex-basis: 20%;
+}
+.content_box{
+    flex-basis: 30%;
+}
+.footer_box{
+    flex-basis: 50%;
+    text-align: right;
+    padding-top: 30px;
+}
+span {
+    color: #4c4e61 ;
+    font-weight: 600 ;
+    font-size: 1.2rem;
+}
+.box p{
+    color: #a3a5ae;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+/*--------------*/
+@media (max-width:600px){
+    *{
+        font-size: 12px;
+    }
+    body{
+        padding: 0;
+    }
+    #card{
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 35px;
+    }
+    #header{
+        padding: 0px;
+        margin-bottom:40px ;
+    }
+    #footer{
+        display: block;
+        padding: 0;
+    }
+   #top_mid_box{
+    margin: 0;
+   }
+   .line{ 
+    margin: 0;
+   }
+   .box{
+    margin: 30px 0;
+   }
+}
+
